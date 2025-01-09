@@ -1,0 +1,18 @@
+name: Testing with taks and devbox
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install devbox
+        uses: jetify-com/devbox-install-action@v0.11.0
+
+      - name: Run build
+        run: devbox run run_build
+
+      - name: Run clean
+        run: devbox run run_clean

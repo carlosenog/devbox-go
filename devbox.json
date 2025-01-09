@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.7/.schema/devbox.schema.json",
+  "packages": [
+    "esbuild@0.24.2",
+    "go@1.23.3",
+    "go-task@3.40.1"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "run_build": [
+        "task build"
+      ],
+      "run_css": [
+        "task css"
+      ],
+      "run_js": [
+        "task js"
+      ],
+      "run_clean": [
+        "task clean"
+      ]
+    }
+  }
+}
