@@ -13,6 +13,3 @@ jobs:
 
       - name: Run build
         run: devbox run run_build
-
-      - name: Run clean
-        run: devbox run run_clean
