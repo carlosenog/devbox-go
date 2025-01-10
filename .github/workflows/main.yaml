@@ -13,3 +13,10 @@ jobs:
 
       - name: Run build
         run: devbox run run_build
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: bundles
+          path: |
+            public
